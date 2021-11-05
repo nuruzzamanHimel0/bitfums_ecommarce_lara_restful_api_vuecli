@@ -6,6 +6,13 @@ import VueRouter from 'vue-router'
 import {routes} from './router'
 Vue.use(VueRouter)
 
+//axios support
+import axios from 'axios';
+window.axios = axios;
+
+// ##Global axios defaults
+axios.defaults.baseURL = 'http://localhost/bitfums_ecommarce_lara_restful_api/public/api';
+
 
 
 
